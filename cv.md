@@ -7,12 +7,12 @@
  * E-mail: pharmaceftssma@gmail.com
  * Telegram: @aliakseiSafonau
  * [LinkedIn](https://www.linkedin.com/in/alexey-safonov-494252236 "Alexey Safonov")
- ## About Me
+## About Me
  I dream of working in the IT,fascinated by the corporate culture,
  teamwork,continuous upward movement and creating the future
- ## Education and courses:
+## Education and courses:
  * Development of web applications in Javascript (IT-Academy)
- ## Code example:
+## Code example:
 ```javascript
 class Calculations {
 
