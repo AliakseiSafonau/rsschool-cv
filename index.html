@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="leftField">
+            <div class="photo">
+                <img src="#" alt="photo">
+            </div>
+            <div class="name">Alexey Safonov</div>
+            <div class="profession">Junior Frontend Developer</div>
+            <div class="contactInformation">
+                <div class="contactInformation_title">Contact information</div> 
+                <ul class="contactInformation_scroll">
+                    <li>Phone: +375 (44) 7294661</li>
+                    <li>E-mail: pharmaceftssma@gmail.com</li>
+                    <li>Telegram: @aliakseiSafonau</li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/alexey-safonov-494252236" class="linkedin">linkedin</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="skills">
+                <div class="skills_title">Skills</div>
+                <ul class="skills_scroll">
+                    <li>Javascript</li>
+                    <li>NodeJS</li>
+                    <li>SASS/SCSS</li>
+                    <li>Webpack</li>
+                    <li>GIT</li>
+                </ul>
+            </div>
+            <div class="language">
+                <div class="language_title">Language</div>
+                <div class="language_name">English level - A2</div>
+            </div>
+        </div>
+        <div class="rightField">
+            <div class="about">
+                <div class="about_title">About Me</div>
+                <div class="about_text">I dream of working in the IT, fascinated by the corporate culture, teamwork, continuous upward movement and creating the future</div>
+            </div>
+            <div class="courses">
+                <div class="courses_title">Education and courses:</div>
+                <ul class="courses_scroll">
+                    <li>Development of web applications in Javascript (IT-Academy)</li>
+                </ul>
+            </div>
+            <div class="codeExample">
+                <div class="codeExample_title">Code example</div>
+                <pre><code>
+class Calculations {
+
+    intermediate(data) {
+                    
+        return data.reduce((total, amount) => {
+            for (let keyAmount in amount) {
+                if (total[keyAmount] && typeof amount[keyAmount] === 'object') {
+                    for (let key in amount[keyAmount]) {
+                        if (total[keyAmount][key]) {
+                            total[keyAmount][key] = String(Number(total[keyAmount][key]) + Number(amount[keyAmount][key]))
+                        } else {
+                            total[keyAmount][key] = amount[keyAmount][key]
+                        }
+                    }
+                } else total[keyAmount] = amount[keyAmount];
+            }
+            return total;
+        }, {})
+    }
+}
+                </code></pre>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
