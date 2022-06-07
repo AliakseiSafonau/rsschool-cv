@@ -1,4 +1,4 @@
-# [rsschool-cv](https://AliakseiSafonau.github.io/rsschool-cv/cv "Alexey Safonov")
+# [rsschool-cv](https://AliakseiSafonau.github.io/rsschool-cv/ "Alexey Safonov")
 # Alexey Safonov
 ## Junior Frontend Developer
 ***
