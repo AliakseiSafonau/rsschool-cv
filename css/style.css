@@ -2,3 +2,157 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
+  
+body {
+    margin: 0;
+    line-height: 1;
+    background-color: #03a9f4;
+    height: 100%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    background-color: #edeef0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+    
+    justify-content: center;
+    width: 60%;
+    border-radius: 10px;
+}
+
+.leftField {
+    width: 39%;
+    margin-right: auto;
+}
+
+.rightField {
+    width: 59%;
+    margin-left: auto;
+    
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+}
+
+.profession {
+    display: flex;
+    justify-content: center;
+}
+
+.about_text {
+    padding: 5px 5px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    font-size: 150%;
+    font-weight: 550;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.lists {
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+.language_name {
+    margin: 5px 5px;
+    padding: 5px 5px;
+}
+
+.left {
+    
+    margin-right: auto;
+}
+
+.right {
+    margin-left: auto;
+}
+
+hr {
+    border: 5px solid #03a9f4;
+}
+
+.footer {
+    width: 60%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.columns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+
+}
+
+.year {
+    color: #fff;
+}
+
+@media (max-width: 1916px) {
+    .container {
+        margin: auto;
+        width: 1200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        display: block;
+        margin: auto;
+        width: 800px;
+    }
+
+    .rightField {
+        width: 59%;
+        margin: auto;
+    }
+
+    .leftField {
+        width: 39%;
+        margin: auto;
+    }
+
+    .code {
+        overflow-x: auto;
+    }
+}
