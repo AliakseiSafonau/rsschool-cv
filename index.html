@@ -65,9 +65,9 @@
 
         intermediate(data) {
 
-            return data.reduce((total, amount) =\&gt; {
+            return data.reduce((total, amount) =&gt; {
                 for (let keyAmount in amount) {
-                    if (total[keyAmount] \&amp;\&amp; typeof amount[keyAmount] === 'object') {
+                    if (total[keyAmount] &amp;&amp; typeof amount[keyAmount] === 'object') {
                         for (let key in amount[keyAmount]) {
                             if (total[keyAmount][key]) {
                                 total[keyAmount][key] = String(Number(total[keyAmount][key]) +
