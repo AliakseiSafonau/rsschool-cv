@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>CV Safonov Alexey</title>
 </head>
 <body>
+  <div class="wrapper">
+    <main class="main">
+      <div class="container">
+        <div class="left-content">
+          <div class="photo">
+            <div class="photo__cv-photo">
+              <img class="cv-photo__photo" src="/img/photo.jpg" alt="photo">
+            </div>
+          </div>
+          <section class="contacts">
+            <h3>Contact information</h3>
+            <ul class="contacts-list__items">
+              <li class="contacts-list__item">
+                <div class="contacts-list__item__svg">
+                  <img src="img/location.svg" alt="location">
+                </div>
+                <span>Minsk, the Republic of Belarus</span>
+              </li>
+              <li class="contacts-list__item">
+                <div class="contacts-list__item__svg">
+                  <img src="img/phone.svg" alt="phone">
+                </div>
+                <span>+375 (44) 7294661</span>
+              </li>
+              <li class="contacts-list__item">
+                <div class="contacts-list__item__svg">
+                  <img src="img/telegram.png" alt="telegram">
+                </div>
+                <span>@aliakseiSafonau</span>
+              </li>
+              <li class="contacts-list__item">
+                <div class="contacts-list__item__svg">
+                  <img src="img/mail.svg" alt="mail">
+                </div>
+                <span>aliakseisafonau@yandex.by</span>
+              </li>
+            </ul>
+          </section>
+          <section class="professional-skills">
+            <h3>Professional skills</h3>
+            <ul class="professional-skills-list__items">
+              <li class="professional-skills-list__item">
+                <h4>Programming languages</h4>
+                <span>JS (ECMAScript 5-9), TypeScript, PHP, Python</span>
+              </li>
+              <li class="professional-skills-list__item">
+                <h4>HTML/CSS coding</h4>
+                <span>HTML5, CSS3, Sass/Scss</span>
+              </li>
+              <li class="professional-skills-list__item">
+                <h4>Frameworks/ Libraries</h4>
+                <span>React, Vue, Django, FastAPI</span>
+              </li>
+              <li class="professional-skills-list__item">
+                <h4>State managers</h4>
+                <span>Redux, Vuex</span>
+              </li>
+              <li class="professional-skills-list__item">
+                <h4>Backend experience</h4>
+                <span>Node.js, Python</span>
+              </li>
+              <li class="professional-skills-list__item">
+                <h4>Version control system</h4>
+                <span>Git, GitHub, GitLab</span>
+              </li>
+              <li class="professional-skills-list__item">
+                <h4>Docker</h4>
+              </li>
+            </ul>
+          </section>
+          <section class="language">
+            <h3>Language skills</h3>
+            <ul>
+              <li><span>English (B1)</span></li>
+              <li><span>French (A2)</span></li>
+              <li><span>Russian (native)</span></li>
+            </ul>
+          </section>
+        </div>
+        <div class="right-content">
+          <section class="title">
+            <h1>Alexey Safonov</h1>
+            <h2>Frontend Developer</h2>
+            <p class="right-p">
+              I approach every aspect of my work with professional responsibility and a high degree of
+              punctuality. My resilience and decisiveness allow me to remain focused and efficient even in the
+              most stressful situations. Courtesy and communicability enable me to establish contacts at all levels
+              of interaction successfully. Attention to detail and a strong sense of duty ensure the high quality of
+              task execution.
+            </p>
+          </section>
+          <section class="education">
+            <h4 class="education__title cv-title">Education</h4>
+            <ul>
+              <li>
+                <h5>IT-Academy</h5>
+                <p class="right-p" style="font-size: smaller;">Course | JS Web application development</p>
+                <p class="right-p" style="font-size: smaller;">End date: <span>feb 2022</span></p> 
+                <p class="right-p" style="font-size: smaller;">Specialty: <span>Frontend Developer</span></p>
+              </li>
+            </ul>
+          </section>
+          <section class="code">
+            <h4 class="code__title cv-title">Code example</h4>
+            <pre class="code-js">
+              <code >
+                class Calculations {
+                  intermediate(data) {
+                    return data.reduce((total, amount) => {
+                      for (let keyAmount in amount) {
+                        if (total[keyAmount] && typeof amount[keyAmount] === 'object') {
+                          for (let key in amount[keyAmount]) {
+                            if (total[keyAmount][key]) {
+                              total[keyAmount][key] = String(Number(total[keyAmount][key]) + Number(amount[keyAmount][key]))
+                            } else {
+                              total[keyAmount][key] = amount[keyAmount][key]
+                            }
+                          }
+                        } else total[keyAmount] = amount[keyAmount];
+                      }
+                      return total;
+                    }, {})
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_info">
+          <a class="footer__link" href="https://rs.school/courses/javascript-preschool-ru">
+            <img src="img/rs_school_js.svg" alt="rs_school_js">
+          </a>
+          <span>© 2024 by Alexey Safonov</span>
+          <a class="footer__link" href="https://github.com/AliakseiSafonau">
+            <img src="img/GitHub_Logo.png" alt="github">
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
